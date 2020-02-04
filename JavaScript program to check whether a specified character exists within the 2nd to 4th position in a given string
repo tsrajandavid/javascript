@@ -1,0 +1,17 @@
+JavaScript program to check whether a specified character exists within the 2nd to 4th position in a given string
+
+function checkChar(str, char)
+ {
+  ctr = 0;
+  for (let i = 0; i < str.length; i++)
+  {
+    if (str.charAt(i) == char) {
+      ctr++;
+    }
+  }
+  return (ctr >= 2 && ctr <= 4);
+}
+
+console.log(checkChar("Python", "y"));
+console.log(checkChar("JavaScript", "a"));
+console.log(checkChar("Console", "o"));
